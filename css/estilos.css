@@ -1,3 +1,4 @@
+
 body {
 	font-family: Dancing Script;
 	background: black;
@@ -163,15 +164,18 @@ h3
 /*efectos imagenes*/
 #image1
 {
-    filter: blur(10px);
+    -webkit-filter: blur(10px) drop-shadow(2px 2px 2px #02010a);
+    filter: blur(10px) drop-shadow(2px 2px 2px #02010a);
 }
 #image2, #image4, #image6
 {
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+    filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
 }
 #image3
 {
-    filter: sepia(90%);
+    -webkit-filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
+    filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
 }
 @media (max-width: 900px) /* movil*/
 {
