@@ -1,0 +1,270 @@
+body {
+	font-family: Dancing Script;
+	background: black;
+	width:90%;
+	margin: auto;
+}
+header
+{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+header a.current:link
+{
+    text-decoration: none; 
+}
+@keyframes slidein 
+{
+    0% { margin-top:150%; }
+    60% { margin-top:-5%;}
+    100% { margin-top:0%;}
+}
+#cabecera
+{
+    background: #5b7989;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius:  10px 10px 0 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+}
+h1
+{
+    margin-left: 2%;
+}
+nav
+{
+    background: #5b7989;
+    font-size: 25px;
+}
+#contenido a 
+{
+    color:black;
+    width:100%;
+    justify-content: center;
+    margin:0;
+}
+#seccion-sec p 
+{
+    margin:0;
+    width:100%;
+    text-align: center;
+    font-size: 25px;
+}
+#cabecera a 
+{
+    color: white;
+    
+}
+#imagen-prin img
+{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 90%;
+    height: 90%;
+}
+#imagen-sec1 img
+{
+    margin:0;
+    width: 90%;
+    height: 90%;
+}
+#imagen-sec2 img
+{
+    width: 90%;
+    height: 90%;
+}
+img
+{
+    -webkit-filter: drop-shadow(2px 2px 2px #02010a);
+    filter: drop-shadow(2px 2px  2px #02010a);
+}
+#imagen-prin
+    {
+        background: #82c3a6;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+#seccion-sec
+    {
+        background: #d5c75f;
+        border: 1px solid black;
+        justify-content: center;
+        width: 100%;
+
+    }
+#imagen-sec1
+    {
+        background: #d5c75f;
+        justify-content: center;
+        margin: 5%;
+
+    }
+#imagen-sec1 img:hover
+{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+    -webkit-transform: translate(20px, -5px);
+    transform: translate(20px, -5px);
+
+}
+#imagen-sec2
+    {
+        background: #d5c75f;
+        justify-content: center;
+        margin: 5%;
+
+    }
+#imagen-sec2 img:hover
+{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+footer
+{
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+    margin-bottom:2%;
+    justify-content: center;
+}
+#pie
+{
+    margin-left:10%;
+    margin-right:5%;
+    margin-bottom:5%;
+    align-content: center;
+}
+h3
+{
+    margin:0
+}
+#efectos-sec
+{
+    text-align: center;
+    width:100%;
+    background: #d5c75f;
+    
+}
+#efectos-sec img
+{
+    margin:2%;
+    width: 90%;
+}
+#efectos-sec p
+{
+    margin:0;
+}
+/*efectos imagenes*/
+#image1
+{
+    filter: blur(10px);
+}
+#image2, #image4, #image6
+{
+    filter: grayscale(100%);
+}
+#image3
+{
+    filter: sepia(90%);
+}
+@media (max-width: 900px) /* movil*/
+{
+    #cabecera
+    {
+        text-align: center;
+    }
+    nav
+    {
+        margin-right: 2%;
+        width:100%;
+    }
+    #seccion-sec
+    {
+        margin:0;
+        align-content: center;
+    }
+    #imagen-sec1
+    {
+        margin:5%;
+        display: flex;
+        align-content: center;
+    }
+    #imagen-sec2
+    {
+        margin:5%;
+        display: flex;
+        align-content: center;
+    }
+    #imagen-sec1 img
+    {
+        width: 90%;
+
+    }
+    #imagen-sec2 img
+    {
+        width: 90%;
+
+    }
+}
+@media (min-width: 900px) /* desktop*/
+{   
+    nav
+    {
+        margin-right: 2%;
+        float:right;
+    }
+    #cabecera
+    {
+        float:left;
+    }
+    #seccion-sec
+    {
+        display: flex;
+    }
+    #imagen-sec1
+    {   
+        margin:0;
+        width: 50%;
+        float:left;
+    }
+    #imagen-sec2
+    {   margin:0;
+        width: 50%;
+        float:right;
+    }
+    #imagen-sec1 img
+    {
+        margin:5%;
+    }
+    #imagen-sec2 img
+    {
+        margin:5%;
+    }
+    #pie
+    {
+        -webkit-column-count:4;
+        -moz-column-count:4;
+        column-count:4;
+        -webkit-column-width: 25%;
+        -moz-column-width: 25%;
+        column-width: 25%;
+
+    }
+    #efectos-sec
+    {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 34%;
+        column-width: 33%;
+
+    }
+    
+}
